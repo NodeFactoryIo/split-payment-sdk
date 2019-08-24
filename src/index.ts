@@ -3,7 +3,8 @@ import box from "3box";
 export interface PaymentRequest {
   from: string,
   amount: number,
-  currency: string
+  currency: string,
+  to: string,
 }
 
 export const SPLIT_NETWORK_NOTIF_SPACE = "split-network-space-notif";
@@ -41,7 +42,7 @@ export class Requester {
   }
 
   private singleRequest = async (request: PaymentRequest): Promise<string> => {
-    const thread = await this.space.joinThread(getThreadName(request.from), {firstModerator: MODERATOR, members: true});
+    const thread = await this.space.joinThread(getThreadName(request.from), {firstModerator: MODERATOR, members: false});
     return await thread.post(JSON.stringify(request));
   }
 
@@ -70,7 +71,7 @@ export class SplitWallet {
   }
 
   static async getRawPaymentRequests(address: string): Promise<[{postId: string, message: string}]> {
-    return await box.getThread(SPLIT_NETWORK_NOTIF_SPACE, getThreadName(address), MODERATOR, true)
+    return await box.getThread(SPLIT_NETWORK_NOTIF_SPACE, getThreadName(address), MODERATOR, false)
   }
 
   onNewPaymentRequest(callback: (request: PaymentRequest) => void): void {
