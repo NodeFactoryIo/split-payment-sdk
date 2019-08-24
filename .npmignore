@@ -1,3 +1,4 @@
+sdk-example
 src
 test
 tsconfig.json
@@ -7,7 +8,6 @@ tslint.json
 .github
 .prettierignore
 .vscode
-build/docs
 **/*.spec.*
 coverage
 .nyc_output
