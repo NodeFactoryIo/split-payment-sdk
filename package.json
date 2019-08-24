@@ -1,5 +1,5 @@
 {
-  "name": "split-paymanet-sdk",
+  "name": "@nodefactory/split-paymanet-sdk",
   "version": "1.0.0",
   "description": "Sdk for integrating split payment network into your wallet",
   "main": "build/main/index.js",
