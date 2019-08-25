@@ -66,6 +66,14 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Class used for fetching and listening on new payment requests-
+						Intended to be used in wallets</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -120,16 +128,31 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NodeFactoryIo/split-payment-sdk/blob/0d4bdc1/src/index.ts#L61">index.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/NodeFactoryIo/split-payment-sdk/blob/0d4bdc1/src/index.ts#L82">index.ts:82</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This will not start polling. Check <a href="splitwallet.html#startpolling">startPolling</a></p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>address: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>your ethereum address that will receive payment requests</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> pollingPeriod: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>number of miliseconds before new check for pending payment requests</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="splitwallet.html" class="tsd-signature-type">SplitWallet</a></h4>
@@ -145,7 +168,7 @@
 					<div class="tsd-signature tsd-kind-icon">address<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/NodeFactoryIo/split-payment-sdk/blob/0d4bdc1/src/index.ts#L53">index.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/NodeFactoryIo/split-payment-sdk/blob/0d4bdc1/src/index.ts#L74">index.ts:74</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -155,7 +178,7 @@
 					<div class="tsd-signature tsd-kind-icon">callbacks<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/NodeFactoryIo/split-payment-sdk/blob/0d4bdc1/src/index.ts#L57">index.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/NodeFactoryIo/split-payment-sdk/blob/0d4bdc1/src/index.ts#L78">index.ts:78</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -165,7 +188,7 @@
 					<div class="tsd-signature tsd-kind-icon">poll<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Timeout</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/NodeFactoryIo/split-payment-sdk/blob/0d4bdc1/src/index.ts#L59">index.ts:59</a></li>
+							<li>Defined in <a href="https://github.com/NodeFactoryIo/split-payment-sdk/blob/0d4bdc1/src/index.ts#L80">index.ts:80</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -175,7 +198,7 @@
 					<div class="tsd-signature tsd-kind-icon">polling<wbr>Period<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/NodeFactoryIo/split-payment-sdk/blob/0d4bdc1/src/index.ts#L55">index.ts:55</a></li>
+							<li>Defined in <a href="https://github.com/NodeFactoryIo/split-payment-sdk/blob/0d4bdc1/src/index.ts#L76">index.ts:76</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -185,7 +208,7 @@
 					<div class="tsd-signature tsd-kind-icon">total<wbr>Request<wbr>Count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/NodeFactoryIo/split-payment-sdk/blob/0d4bdc1/src/index.ts#L61">index.ts:61</a></li>
+							<li>Defined in <a href="https://github.com/NodeFactoryIo/split-payment-sdk/blob/0d4bdc1/src/index.ts#L82">index.ts:82</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -202,13 +225,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NodeFactoryIo/split-payment-sdk/blob/0d4bdc1/src/index.ts#L77">index.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/NodeFactoryIo/split-payment-sdk/blob/0d4bdc1/src/index.ts#L111">index.ts:111</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Subscribes on new payment requests</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>callback: <span class="tsd-signature-type">function</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>method to be called, first param will be <a href="../interfaces/paymentrequest.html">PaymentRequest</a></p>
+									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
 											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
@@ -243,7 +274,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NodeFactoryIo/split-payment-sdk/blob/0d4bdc1/src/index.ts#L100">index.ts:100</a></li>
+									<li>Defined in <a href="https://github.com/NodeFactoryIo/split-payment-sdk/blob/0d4bdc1/src/index.ts#L141">index.ts:141</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -266,9 +297,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NodeFactoryIo/split-payment-sdk/blob/0d4bdc1/src/index.ts#L81">index.ts:81</a></li>
+									<li>Defined in <a href="https://github.com/NodeFactoryIo/split-payment-sdk/blob/0d4bdc1/src/index.ts#L119">index.ts:119</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Starts polling for new payment requests.
+									Cannot be called twice in a row.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -283,9 +320,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NodeFactoryIo/split-payment-sdk/blob/0d4bdc1/src/index.ts#L95">index.ts:95</a></li>
+									<li>Defined in <a href="https://github.com/NodeFactoryIo/split-payment-sdk/blob/0d4bdc1/src/index.ts#L136">index.ts:136</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Stops polling</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -300,7 +342,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NodeFactoryIo/split-payment-sdk/blob/0d4bdc1/src/index.ts#L68">index.ts:68</a></li>
+									<li>Defined in <a href="https://github.com/NodeFactoryIo/split-payment-sdk/blob/0d4bdc1/src/index.ts#L94">index.ts:94</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -323,13 +365,20 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/NodeFactoryIo/split-payment-sdk/blob/0d4bdc1/src/index.ts#L73">index.ts:73</a></li>
+									<li>Defined in <a href="https://github.com/NodeFactoryIo/split-payment-sdk/blob/0d4bdc1/src/index.ts#L103">index.ts:103</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns raw 3box thread messages</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>address: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></h4>
